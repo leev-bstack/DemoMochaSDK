@@ -3,7 +3,7 @@ const { Builder, Capabilities } = require("selenium-webdriver");
 
 var buildDriver = function() {
   return new Builder().
-    usingServer('http://localhost:4444/wd/hub').
+    forBrowser('chrome').
     withCapabilities(Capabilities.chrome()).
     build();
 };
@@ -12,11 +12,12 @@ describe('BStack Local Testing', async function() {
   this.timeout(0);
   var driver;
 
-  before(function() {
+  this.beforeEach(function() {
     driver = buildDriver();
   });
 
   it('check tunnel is working', async function () {
+    await driver.manage().window().maximize();
     await driver.get('http://bs-local.com:45454/');
     let title = await driver.getTitle();
     assert(title.match(/BrowserStack Local/i) != null);

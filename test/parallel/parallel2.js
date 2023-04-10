@@ -3,23 +3,22 @@ const { Builder, By, Capabilities, until } = require("selenium-webdriver");
 
 var buildDriver = function() {
   return new Builder().
-    usingServer('http://localhost:4444/wd/hub').
+    forBrowser('chrome').
     withCapabilities(Capabilities.chrome()).
     build();
 };
 
-describe('BStack\'s Cart Functionality', async function() {
+describe('Test 2', async function() {
   this.timeout(0);
   var driver;
 
-  before(function() {
+  this.beforeEach(function() {
     driver = buildDriver();
   });
 
-  it('can add items to cart', async function () {
+  it('Demo App', async function () {
     await driver.get('https://bstackdemo.com/');
     await driver.wait(until.titleMatches(/StackDemo/i), 10000);
-
     // locating product on webpage and getting name of the product
     await driver.wait(until.elementLocated(By.xpath('//*[@id="1"]/p')));
     let productText = await driver.findElement(By.xpath('//*[@id="1"]/p')).getText();
@@ -35,8 +34,7 @@ describe('BStack\'s Cart Functionality', async function() {
     // checking whether product has been added to cart by comparing product name
     assert(productText === productCartText);
   });
-
-  after(async function() {
+  this.afterEach(async function() {
     await driver.quit();
   });
 });

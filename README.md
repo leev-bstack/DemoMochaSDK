@@ -1,54 +1,47 @@
-# mocha-browserstack
+# BrowserStack MochaJS CE demo
 
-[Mocha](https://github.com/mochajs/mocha) Integration with BrowserStack for E2E functional testing of UI using Selenium and [browserstack-node-sdk](https://www.npmjs.com/package/browserstack-node-sdk).
+BrowserStack CE demo repo using [browserstack-node-sdk](https://www.npmjs.com/package/browserstack-node-sdk).
 
 ![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
 
-<img src ="https://camo.githubusercontent.com/af4bf83ab2ca125346740f9961345a24ec43b3a9/68747470733a2f2f636c6475702e636f6d2f78465646784f696f41552e737667" height = "100">
+<img src ="https://camo.githubusercontent.com/af4bf83ab2ca125346740f9961345a24ec43b3a9" height = "100">
 
-## Run sample build
+## Install repo
 
 ---
 - Clone the repo
 - Install dependencies `npm install`
-- Set your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings) in [browserstack.yml](browserstack.yml) `npx setup --username userName --key accessKey`
-- To run sample test, run `npm run sample-test` or `yarn run sample-test`
-- To run tests on private websites,
-   - set browserstackLocal: true at [browserstack.yml](browserstack.yml)
-   - run `npm run sample-local-test` or `yarn run sample-local-test`
+- Set your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings) in the browserstack.yml files or set BROWSERSTACK_USERNAME and
+BROWSERSTACK_ACCESS_KEY as env variables
 
-## Integrate your test suite
+## You can run any of the following scenerios
 
 ---
-1. Install browserstack-node-sdk as a dev-dependency
+1. Run a test on a local chromedriver to demonstrate the test before integration.  This will automatically update the Chromedriver to the latest version.
 ```
-npm i -D browserstack-node-sdk
-or
-yarn add --dev browserstack-node-sdk
+npm run chrome
 ```
-2. Setup
+2. Run a single test on BrowserStack with the sdk
 ```
-npx setup --username userName --key accessKey
+npm run single
 ```
-  * Adds a browserstack.yml file at root of your mocha project with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings).
-  * Adds a new command for running tests on browserstack in scripts tag of package.json,
-  ```
-  "scripts": {
-    "test": "mocha ...args",
-    "browserstack-test": "browserstack-node-sdk mocha ...args"
-  },
-  ```
+3.  Run tests in parallel.  This will run 3 tests with 10 browsers for a total of 30 parallels
+```
+npm run parallel
+```
+4. Run a test using Local.  This will verify the page title of the Local Console
+```
+npm run local
+```
+5. Run a test that will fail. This will demonstrate the test automatic marking of failed tests
+```
+npm run fail
+```
+
 
 ## Notes
 
 ---
 - You can view your test results on the [BrowserStack automate dashboard](https://automate.browserstack.com)
-- To test on a different set of browsers, check out our [capabilities generator](https://www.browserstack.com/automate/capabilities)
+- This automatically integrates with [Test Observability](https://observability.browserstack.com/)
   
-## Additional Resources
-
----
-- [Documentation for writing automate test scripts in Node](https://www.browserstack.com/automate/node)
-- [Customizing your tests on BrowserStack](https://www.browserstack.com/automate/capabilities)
-- [Browsers & mobile devices for selenium testing on BrowserStack](https://www.browserstack.com/list-of-browsers-and-platforms?product=automate)
-- [Using REST API to access information about your tests via the command-line interface](https://www.browserstack.com/automate/rest-api)

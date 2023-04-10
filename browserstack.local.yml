@@ -1,0 +1,58 @@
+userName:
+accessKey:
+
+buildName: local demo
+projectName: BrowserStack Samples
+
+source: mocha:sample-master:v1.0
+
+platforms:
+  - os: OS X
+    osVersion: Big Sur
+    browser: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browser: Edge
+    browserVersion: latest
+  - os: OS X
+    osVersion: Big Sur
+    browser: Safari
+    browserVersion: latest
+  - os: Windows
+    osVersion: 11
+    browser: Chrome
+    browserVersion: latest
+  - os: OS X
+    osVersion: Ventura
+    browser: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 11
+    browser: Firefox
+    browserVersion: latest
+  - os: OS X
+    osVersion: Ventura
+    browser: Safari
+    browserVersion: latest
+  - os: OS X
+    osVersion: Monterey
+    browser: Safari
+    browserVersion: latest
+  - os: OS X
+    osVersion: Monterey
+    browser: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browser: Chrome
+    browserVersion: latest
+
+
+parallelsPerPlatform: 5
+
+browserstackLocal: true 
+
+debug: false 
+networkLogs: false 
+consoleLogs: errors 

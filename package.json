@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/browserstack/mocha-browserstack.git"
+    "url": "git+https://github.com/leev-bstack/DemoMochaSDK"
   },
   "keywords": [
     "mocha",
@@ -25,9 +25,9 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/browserstack/mocha-browserstack/issues"
+    "url": "https://github.com/leev-bstack/DemoMochaSDK/issues"
   },
-  "homepage": "https://github.com/browserstack/mocha-browserstack#readme",
+  "homepage": "https://github.com/leev-bstack/DemoMochaSDK#readme",
   "dependencies": {
     "browserstack-local": "^1.4.8",
     "chromedriver": "^112.0.0",

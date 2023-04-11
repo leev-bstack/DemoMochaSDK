@@ -1,19 +1,14 @@
 var assert = require('assert');
 const { Builder, Capabilities } = require("selenium-webdriver");
 
-var buildDriver = function() {
-  return new Builder().
-    forBrowser('chrome').
-    withCapabilities(Capabilities.chrome()).
-    build();
-};
-
 describe('BStack Local Testing', async function() {
-  this.timeout(0);
   var driver;
 
   this.beforeEach(function() {
-    driver = buildDriver();
+    driver = new Builder().
+    forBrowser('chrome').
+    withCapabilities(Capabilities.chrome()).
+    build();
   });
 
   it('check tunnel is working', async function () {

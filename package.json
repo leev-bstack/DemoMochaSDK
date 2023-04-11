@@ -4,7 +4,7 @@
   "description": " CE demo repo for MochaJS",
   "scripts": {
     "chrome": "mocha test/single.js",
-    "single": "export browserstack-node-sdk mocha test/single.js",
+    "single": "browserstack-node-sdk mocha test/single.js",
     "fail": "browserstack-node-sdk mocha test/fail.js --browserstack.config 'browserstack.fail.yml'",
     "parallel": "browserstack-node-sdk mocha test/parallel/parallel*.js --browserstack.config 'browserstack.parallel.yml'",
     "local": "browserstack-node-sdk mocha test/local.js --browserstack.config 'browserstack.local.yml'",

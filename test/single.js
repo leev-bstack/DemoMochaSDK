@@ -1,19 +1,15 @@
 var assert = require('assert');
 const { Builder, By, Key, Capabilities, until } = require("selenium-webdriver");
 
-var buildDriver = function() {
-  return new Builder().
-    forBrowser('chrome').
-    withCapabilities(Capabilities.chrome()).
-    build();
-};
-
 describe('BrowserStack Search', async function() {
   this.timeout(0);
   var driver;
 
   this.beforeEach(function() {
-    driver = buildDriver();
+    driver = new Builder().
+    forBrowser('chrome').
+    withCapabilities(Capabilities.chrome()).
+    build();
   });
 
   it('data centers title is correct', async function () {

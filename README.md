@@ -18,7 +18,7 @@ BrowserStack CE demo repo using [browserstack-node-sdk](https://www.npmjs.com/pa
 
 ---
 
-### Before running any tests, Please run the following to ensure the latest ChromeDriver and SDK are installed
+### Before running any tests, Please run the following to ensure the latest ChromeDriver and SDK are installed!!!
 ```
 npm run prep
 ```

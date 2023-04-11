@@ -11,14 +11,14 @@ BrowserStack CE demo repo using [browserstack-node-sdk](https://www.npmjs.com/pa
 ---
 - Clone the repo
 - Install dependencies `npm install`
-- Set your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings) in the browserstack.yml files or set BROWSERSTACK_USERNAME and
-BROWSERSTACK_ACCESS_KEY as env variables
+- Set your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings) in the browserstack.yml files or set BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY as environmental variables
+- This repo was designed to work with an account with 25 parallels.  The parallel example will run 30 parallels to intentionally overload them in order to demonstrate the queue.
 
 ## You can run any of the following scenerios
 
 ---
-- This repo was designed to work with an account with 25 parallels.  The parallel example will run 30 parallels to intentionally overload them in order to demonstrate the queue.
-- Before running any tests, Please run the following to ensure the latest ChromeDriver and SDK are installed
+
+**Before running any tests, Please run the following to ensure the latest ChromeDriver and SDK are installed**
 ```
 npm run prep
 ```

@@ -42,7 +42,10 @@ npm run local
 ```
 npm run fail
 ```
-
+6. Run tests for observability. This includes tests that always fail and flakey tests.  This will be under the Observability Demo project, and you will want to run this several times in a row before your first demo for the flakey tests to show in the dashboard.
+```
+npm run observability
+```
 
 ## Notes
 

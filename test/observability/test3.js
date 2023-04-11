@@ -8,7 +8,7 @@ var buildDriver = function() {
     build();
 };
 
-describe('Test 2', async function() {
+describe('Test 3', async function() {
   this.timeout(0);
   var driver;
 
@@ -16,7 +16,7 @@ describe('Test 2', async function() {
     driver = buildDriver();
   });
 
-  it('Demo App', async function () {
+  it('More Demo App', async function () {
     await driver.get('https://bstackdemo.com/');
     await driver.wait(until.titleMatches(/StackDemo/i), 10000);
     // locating product on webpage and getting name of the product

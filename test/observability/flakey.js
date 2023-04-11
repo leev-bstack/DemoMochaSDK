@@ -1,5 +1,5 @@
 var assert = require('assert');
-const { Builder, By, Key, Capabilities, until } = require("selenium-webdriver");
+const { Builder, By, Capabilities, until } = require("selenium-webdriver");
 
 var buildDriver = function() {
   return new Builder().
@@ -8,7 +8,7 @@ var buildDriver = function() {
     build();
 };
 
-describe('BrowserStack Search', async function() {
+describe('flakey', async function() {
   this.timeout(0);
   var driver;
 
@@ -16,13 +16,11 @@ describe('BrowserStack Search', async function() {
     driver = buildDriver();
   });
 
-  it('page title is wrong', async function () {
-    //go to browserstack
-    await driver.manage().window().maximize();
+  it('BrowserStack page title', async function () {
     await driver.get('https://browserstack.com/');
-    
     const title = await driver.getTitle();
-    await assert.equal(title, "Wrong Title");
+    var num = await Math.floor(Math.random() * 3)
+    assert.notEqual(2, num)
   });
   this.afterEach(async function() {
     await driver.quit();

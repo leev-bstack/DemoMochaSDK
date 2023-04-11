@@ -17,7 +17,6 @@ describe('Test 1', async function() {
   });
 
   it('Google', async function () {
-    await driver.manage().window().maximize();
     await driver.get('https://www.google.com');
     await driver.wait(until.elementLocated(By.name("q")));
     await driver.findElement(By.name('q')).sendKeys("BrowserStack", Key.ENTER);

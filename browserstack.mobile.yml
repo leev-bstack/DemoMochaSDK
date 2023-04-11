@@ -1,6 +1,5 @@
 userName:
 accessKey:
-
 buildName: mobile demo
 projectName: BrowserStack Samples
 source: mocha:sample-master:v1.0
@@ -22,7 +21,7 @@ platforms:
     osVersion: 16
     browserName: safari
 
-parallelsPerPlatform: 5
+parallelsPerPlatform: 1
 
 browserstackLocal: false 
 debug: false 

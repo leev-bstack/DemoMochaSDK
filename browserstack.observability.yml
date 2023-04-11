@@ -2,8 +2,8 @@
 userName:
 accessKey:
 
-buildName: parallel demo
-projectName: BrowserStack Samples
+buildName: Observability demo
+projectName: Observability Demo
 
 source: mocha:sample-master:v1.0
 
@@ -28,28 +28,8 @@ platforms:
     osVersion: Ventura
     browser: Chrome
     browserVersion: latest
-  - os: Windows
-    osVersion: 11
-    browser: Firefox
-    browserVersion: latest
-  - os: OS X
-    osVersion: Ventura
-    browser: Safari
-    browserVersion: latest
-  - os: OS X
-    osVersion: Monterey
-    browser: Safari
-    browserVersion: latest
-  - os: OS X
-    osVersion: Monterey
-    browser: Chrome
-    browserVersion: latest
-  - os: Windows
-    osVersion: 10
-    browser: ie
-    browserVersion: latest
 
-parallelsPerPlatform: 3
+parallelsPerPlatform: 5
 
 browserstackLocal: false 
 debug: false 

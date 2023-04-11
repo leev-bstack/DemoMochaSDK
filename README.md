@@ -17,7 +17,12 @@ BROWSERSTACK_ACCESS_KEY as env variables
 ## You can run any of the following scenerios
 
 ---
-1. Run a test on a local chromedriver to demonstrate the test before integration.  This will automatically update the Chromedriver to the latest version.
+- This repo was designed to work with an account with 25 parallels.  The parallel example will run 30 parallels to intentionally overload them in order to demonstrate the queue.
+- Before running any tests, Please run the following to ensure the latest ChromeDriver and SDK are installed
+```
+npm run prep
+```
+1. Run a test on a local chromedriver to demonstrate the test before integration.
 ```
 npm run chrome
 ```

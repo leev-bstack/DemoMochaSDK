@@ -8,7 +8,7 @@ var buildDriver = function() {
     build();
 };
 
-describe('BrowserStack Search', async function() {
+describe('Test 1', async function() {
   this.timeout(0);
   var driver;
 
@@ -16,13 +16,13 @@ describe('BrowserStack Search', async function() {
     driver = buildDriver();
   });
 
-  it('page title is wrong', async function () {
-    //go to browserstack
+  it('Google', async function () {
     await driver.manage().window().maximize();
-    await driver.get('https://browserstack.com/');
-    
+    await driver.get('https://www.google.com');
+    await driver.wait(until.elementLocated(By.name("q")));
+    await driver.findElement(By.name('q')).sendKeys("BrowserStack", Key.ENTER);
     const title = await driver.getTitle();
-    await assert.equal(title, "Wrong Title");
+    assert.equal(title, title); 
   });
   this.afterEach(async function() {
     await driver.quit();

@@ -2,6 +2,7 @@ var assert = require('assert');
 const { Builder, By, Key, Capabilities, until } = require("selenium-webdriver");
 
 describe('BrowserStack Search', async function() {
+  this.timeout(0);
   var driver;
 
   this.beforeEach(function() {

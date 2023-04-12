@@ -4,8 +4,6 @@ BrowserStack CE demo repo using [browserstack-node-sdk](https://www.npmjs.com/pa
 
 ![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
 
-<img src ="https://camo.githubusercontent.com/af4bf83ab2ca125346740f9961345a24ec43b3a9" height = "100">
-
 ## Install repo
 
 ---

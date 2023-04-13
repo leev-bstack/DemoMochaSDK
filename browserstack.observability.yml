@@ -3,7 +3,7 @@ userName:
 accessKey:
 
 buildName: Observability demo
-projectName: Observability Demo
+projectName: Observability MochaJS Demo
 
 source: mocha:sample-master:v1.0
 
@@ -33,5 +33,5 @@ parallelsPerPlatform: 5
 
 browserstackLocal: false 
 debug: false 
-networkLogs: false 
+networkLogs: true 
 consoleLogs: errors 

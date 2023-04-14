@@ -36,7 +36,7 @@ npm run parallel
 ```
 npm run local
 ```
-5. Run a test that will fail. This will demonstrate the test automatic marking of failed tests
+5. Run a test that will fail. This will demonstrate the automatic marking of failed tests
 ```
 npm run fail
 ```

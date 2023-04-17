@@ -20,11 +20,11 @@ BrowserStack CE demo repo using [browserstack-node-sdk](https://www.npmjs.com/pa
 ```
 npm run prep
 ```
-1. Run a test on a local chromedriver to demonstrate the test before integration.
+1. Run a test on a local chromedriver to demonstrate the test before integration. This runs single.js
 ```
 npm run chrome
 ```
-2. Run a single test on BrowserStack with the sdk
+2. Run a single test on BrowserStack with the sdk.  Also uses single.js
 ```
 npm run single
 ```

@@ -24,8 +24,8 @@ describe('Test 2', async function() {
     await driver.wait(until.elementLocated(By.className("float-cart__content"), 10000));
     await driver.findElement(By.className('float-cart__content'))
     // locating product in cart and getting name of the product in cart
-    await driver.wait(until.elementLocated(By.xpath('//*[@id="__next"]/div/div/div[2]/div[2]/div[2]/div/div[3]/p[1]'), 10000));
-    let productCartText = await driver.findElement(By.xpath('//*[@id="__next"]/div/div/div[2]/div[2]/div[2]/div/div[3]/p[1]')).getText();
+    await driver.wait(until.elementLocated(By.css('.float-cart__content .title'), 10000));
+    let productCartText = await driver.findElement(By.css('.float-cart__content .title')).getText();
     // checking whether product has been added to cart by comparing product name
     assert(productText === productCartText);
   });

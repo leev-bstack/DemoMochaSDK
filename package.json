@@ -10,7 +10,7 @@
     "parallel": "browserstack-node-sdk mocha test/parallel/parallel*.js --browserstack.config 'browserstack.parallel.yml'",
     "local": "browserstack-node-sdk mocha test/local.js --browserstack.config 'browserstack.local.yml'",
     "mobile": "browserstack-node-sdk mocha test/mobile.js --browserstack.config 'browserstack.mobile.yml'",
-    "observability": "browserstack-node-sdk mocha test/observability/*.js --browserstack.config 'browserstack.observability.yml'" 
+    "observability": "browserstack-node-sdk mocha test/observability/*.js --browserstack.config 'browserstack.observability.yml'"
   },
   "repository": {
     "type": "git",
@@ -35,6 +35,6 @@
     "selenium-webdriver": "4.1.2"
   },
   "devDependencies": {
-    "browserstack-node-sdk": "^1.10.1"
+    "browserstack-node-sdk": "^1.12.0"
   }
 }

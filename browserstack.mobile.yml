@@ -24,6 +24,6 @@ platforms:
 parallelsPerPlatform: 1
 
 browserstackLocal: false 
-debug: false 
+debug: true 
 networkLogs: true 
 consoleLogs: errors

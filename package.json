@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": " CE demo repo for MochaJS",
   "scripts": {
-    "prep": "npm install chromedriver@latest && npm install browserstack-node-sdk@latest",
+    npm && npm install browserstack-node-sdk@latest",
     "chrome": "mocha test/single.js",
     "single": "browserstack-node-sdk mocha test/single.js",
     "fail": "browserstack-node-sdk mocha test/fail.js --browserstack.config 'browserstack.fail.yml'",
@@ -21,7 +21,7 @@
     "browserstack",
     "selenium",
     "automate",
-    "examples"
+    "demo"
   ],
   "license": "ISC",
   "bugs": {

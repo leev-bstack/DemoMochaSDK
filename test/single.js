@@ -18,7 +18,6 @@ describe('Google Search', async function() {
     await driver.get('https://google.com/');
     //search for browserstack
     await driver.findElement(By.name('q')).sendKeys("BrowserStack", Key.RETURN);
-    //await driver.findElement(By.name('btnK')).click
     //click result
     await driver.wait(until.elementLocated(By.xpath("//*[@href='https://www.browserstack.com/']")));
     await driver.findElement(By.xpath("//*[@href='https://www.browserstack.com/']/div")).click();

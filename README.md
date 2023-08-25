@@ -44,10 +44,11 @@ npm run fail
 ```
 npm run observability
 ```
-8. Run tests with App Automate
+8. Run tests with App Automate on Android using WikipediaSample.apk
 ```
 npm run appium
-8. Run tests with Accessibility Automate
+```
+9. Run tests with Accessibility Automate
 ```
 npm run a11y
 

@@ -44,7 +44,10 @@ npm run fail
 ```
 npm run observability
 ```
-7. Run tests with Accessibility Automate
+8. Run tests with App Automate
+```
+npm run appium
+8. Run tests with Accessibility Automate
 ```
 npm run a11y
 

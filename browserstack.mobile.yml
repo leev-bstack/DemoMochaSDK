@@ -1,7 +1,7 @@
 userName:
 accessKey:
 buildName: mobile demo
-projectName: BrowserStack Samples
+projectName: MochaJS Demos
 source: mocha:sample-master:v1.0
 
 platforms:

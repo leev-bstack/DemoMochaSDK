@@ -2,7 +2,7 @@ userName:
 accessKey:
 
 buildName: local demo
-projectName: BrowserStack Samples
+projectName: MochaJS Demos
 
 source: mocha:sample-master:v1.0
 

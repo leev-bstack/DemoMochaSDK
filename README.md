@@ -51,10 +51,10 @@ npm run appium
 9. Run tests with Accessibility Automate
 ```
 npm run a11y
+```
 
 ## Notes
 
 ---
-- You can view your test results on the [BrowserStack automate dashboard](https://automate.browserstack.com)
-- This automatically integrates with [Test Observability](https://observability.browserstack.com/)
+- The SDK will automatically create links in the console logs to view your test results on BrowserStack
   

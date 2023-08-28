@@ -21,9 +21,10 @@ describe('Google Search', async function() {
     //click result
     await driver.wait(until.elementLocated(By.xpath("//*[@href='https://www.browserstack.com/']")));
     await driver.findElement(By.xpath("//*[@href='https://www.browserstack.com/']/div")).click();
-    });
     //verify page title
     await driver.wait(until.titleIs('Most Reliable App & Cross Browser Testing Platform | BrowserStack'), 10000);
+  });
+  
   this.afterEach(async function() {
     await driver.quit();
   });

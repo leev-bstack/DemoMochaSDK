@@ -28,5 +28,5 @@ parallelsPerPlatform: 1
 
 browserstackLocal: false
 interactiveDebugging: true
-debug: false
+debug: true
 networkLogs: true

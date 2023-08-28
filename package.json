@@ -6,7 +6,7 @@
     "prep": "npm install chromedriver@latest && npm install browserstack-node-sdk@latest",
     "chrome": "mocha test/single.js",
     "single": "browserstack-node-sdk mocha test/single.js",
-    "fail": "browserstack-node-sdk mocha test/fail.js --browserstack.config 'browserstack.fail.yml'",
+    "fail": "browserstack-node-sdk mocha test/observability/fail.js --browserstack.config 'browserstack.fail.yml'",
     "parallel": "browserstack-node-sdk mocha test/parallel/parallel*.js --browserstack.config 'browserstack.parallel.yml'",
     "local": "browserstack-node-sdk mocha test/local.js --browserstack.config 'browserstack.local.yml'",
     "mobile": "browserstack-node-sdk mocha test/mobile.js --browserstack.config 'browserstack.mobile.yml'",

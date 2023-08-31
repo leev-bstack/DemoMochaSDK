@@ -4,15 +4,17 @@
   "description": " CE demo repo for MochaJS",
   "scripts": {
     "prep": "npm install chromedriver@latest && npm install browserstack-node-sdk@latest",
-    "chrome": "mocha test/single.js",
-    "single": "browserstack-node-sdk mocha test/single.js",
-    "fail": "browserstack-node-sdk mocha test/observability/fail.js --browserstack.config 'browserstack.fail.yml'",
-    "parallel": "browserstack-node-sdk mocha test/parallel/parallel*.js --browserstack.config 'browserstack.parallel.yml'",
-    "local": "browserstack-node-sdk mocha test/local.js --browserstack.config 'browserstack.local.yml'",
-    "mobile": "browserstack-node-sdk mocha test/mobile.js --browserstack.config 'browserstack.mobile.yml'",
-    "observability": "browserstack-node-sdk mocha test/observability/*.js --browserstack.config 'browserstack.observability.yml'",
-    "a11y": "browserstack-node-sdk mocha test/parallel/parallel*.js --browserstack.config 'browserstack.a11y.yml'",
-    "appium": "browserstack-node-sdk mocha test/appium.js --browserstack.config 'browserstack.appium.yml'"
+    "chrome": "mocha tests/single.js",
+    "single": "browserstack-node-sdk mocha tests/single.js --browserstack.config 'yaml/browserstack.yml'",
+    "fail": "browserstack-node-sdk mocha tests/observability/fail.js --browserstack.config 'yaml/browserstack.fail.yml'",
+    "parallel": "browserstack-node-sdk mocha tests/parallel/parallel*.js --browserstack.config 'yaml/browserstack.parallel.yml'",
+    "local": "browserstack-node-sdk mocha tests/local.js --browserstack.config 'yaml/browserstack.local.yml'",
+    "mobile": "browserstack-node-sdk mocha tests/mobile.js --browserstack.config 'yaml/browserstack.mobile.yml'",
+    "observability": "browserstack-node-sdk mocha tests/observability/*.js --browserstack.config 'yaml/browserstack.observability.yml'",
+    "a11y": "browserstack-node-sdk mocha tests/parallel/parallel*.js --browserstack.config 'yaml/browserstack.a11y.yml'",
+    "appium": "browserstack-node-sdk mocha tests/appium.js --browserstack.config 'yaml/browserstack.appium.yml'",
+    "xcui": "sh xcui.sh",
+    "espresso": "sh espresso.sh"
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,6 @@
   },
   "homepage": "https://github.com/leev-bstack/DemoMochaSDK#readme",
   "dependencies": {
-    "appium-android-driver": "^5.4.0",
     "browserstack-local": "^1.4.8",
     "chromedriver": "^116.0.0",
     "mocha": "^9.2.2",

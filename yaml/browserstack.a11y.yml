@@ -1,0 +1,26 @@
+userName:
+accessKey:
+
+buildName: a11y Mocha
+projectName: a11y Mocha Demo
+
+source: mocha:sample-master:v1.0
+
+platforms:
+  - os: Windows
+    osVersion: 11
+    browser: Chrome
+    browserVersion: latest
+
+accessibility: true
+#accessibilityOptions:
+#  wcagVersion: wcag21aaa # Default: wcag21aa
+#  includeIssueType:
+#    bestPractice: true # Default: false
+#    needsReview: true # Default: true
+
+parallelsPerPlatform: 3
+browserstackLocal: false 
+debug: true 
+networkLogs: true 
+consoleLogs: errors 

@@ -9,7 +9,7 @@ BrowserStack CE demo repo using [browserstack-node-sdk](https://www.npmjs.com/pa
 ---
 - Clone the repo
 - Install dependencies `npm install`
-- Set your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings) in the browserstack.yml files or set BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY as environmental variables
+- Set your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings). Preferably, you should set BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY as environmental variables.  Alternatively, you can also set them in all of the browserstack.yml files and the shell scipts for xcui and espresso.
 - This repo was designed to work with an account with 25 parallels.  The parallel example will run 30 parallels to intentionally overload them in order to demonstrate the queue.
 
 ## You can run any of the following scenerios
@@ -44,11 +44,19 @@ npm run fail
 ```
 npm run observability
 ```
-8. Run tests with App Automate on Android using WikipediaSample.apk
+8. Run tests on App Automate on Android using wikipedia.apk
 ```
 npm run appium
 ```
-9. Run tests with Accessibility Automate
+9. Run tests on App Automate with XCUITest
+```
+npm run xcui
+```
+10. Run tests on App Automate with Espresso
+```
+npm run espresso
+```
+11. Run tests with Accessibility Automate
 ```
 npm run a11y
 ```

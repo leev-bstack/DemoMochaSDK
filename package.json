@@ -7,11 +7,11 @@
     "chrome": "mocha tests/single.js",
     "single": "browserstack-node-sdk mocha tests/single.js --browserstack.config 'yaml/browserstack.yml'",
     "fail": "browserstack-node-sdk mocha tests/observability/fail.js --browserstack.config 'yaml/browserstack.fail.yml'",
-    "parallel": "browserstack-node-sdk mocha tests/parallel/parallel*.js --browserstack.config 'yaml/browserstack.parallel.yml'",
+    "parallel": "browserstack-node-sdk mocha tests/parallel/*.js --browserstack.config 'yaml/browserstack.parallel.yml'",
     "local": "browserstack-node-sdk mocha tests/local.js --browserstack.config 'yaml/browserstack.local.yml'",
     "mobile": "browserstack-node-sdk mocha tests/mobile.js --browserstack.config 'yaml/browserstack.mobile.yml'",
     "observability": "browserstack-node-sdk mocha tests/observability/*.js --browserstack.config 'yaml/browserstack.observability.yml'",
-    "a11y": "browserstack-node-sdk mocha tests/parallel/parallel*.js --browserstack.config 'yaml/browserstack.a11y.yml'",
+    "a11y": "browserstack-node-sdk mocha tests/a11y/*.js --browserstack.config 'yaml/browserstack.a11y.yml'",
     "appium": "browserstack-node-sdk mocha tests/appium.js --browserstack.config 'yaml/browserstack.appium.yml'",
     "xcui": "sh xcui.sh",
     "espresso": "sh espresso.sh"
@@ -34,11 +34,11 @@
   "homepage": "https://github.com/leev-bstack/DemoMochaSDK#readme",
   "dependencies": {
     "browserstack-local": "^1.4.8",
-    "chromedriver": "^116.0.0",
+    "chromedriver": "^117.0.3",
     "mocha": "^9.2.2",
     "selenium-webdriver": "4.1.2"
   },
   "devDependencies": {
-    "browserstack-node-sdk": "^1.26.0"
+    "browserstack-node-sdk": "^1.27.3"
   }
 }

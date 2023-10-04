@@ -14,10 +14,15 @@ platforms:
 
 accessibility: true
 #accessibilityOptions:
-#  wcagVersion: wcag21aaa # Default: wcag21aa
-#  includeIssueType:
-#    bestPractice: true # Default: false
-#    needsReview: true # Default: true
+  # scannerProcessingTimeout: 5
+  # wcagVersion: wcag21aa
+  # includeIssueType: 
+  #   bestPractice: false
+  #   needsReview: true
+  # scannerVersion: 0.0.5.0
+  # scannerVersion: latest
+  # includeTagsInTestingScope: []
+  # excludeTagsInTestingScope: ['@p1', '@p0']
 
 parallelsPerPlatform: 3
 browserstackLocal: false 

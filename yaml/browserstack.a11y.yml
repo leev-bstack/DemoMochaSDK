@@ -24,7 +24,7 @@ accessibility: true
   # includeTagsInTestingScope: []
   # excludeTagsInTestingScope: ['@p1', '@p0']
 
-parallelsPerPlatform: 3
+parallelsPerPlatform: 4
 browserstackLocal: false 
 debug: true 
 networkLogs: true 

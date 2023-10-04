@@ -11,7 +11,7 @@
     "local": "browserstack-node-sdk mocha tests/local.js --browserstack.config 'yaml/browserstack.local.yml'",
     "mobile": "browserstack-node-sdk mocha tests/mobile.js --browserstack.config 'yaml/browserstack.mobile.yml'",
     "observability": "browserstack-node-sdk mocha tests/observability/*.js --browserstack.config 'yaml/browserstack.observability.yml'",
-    "a11y": "browserstack-node-sdk mocha tests/a11y/*.js --browserstack.config 'yaml/browserstack.a11y.yml'",
+    "a11y": "browserstack-node-sdk mocha --parallel tests/a11y/*.js --browserstack.config 'yaml/browserstack.a11y.yml'",
     "appium": "browserstack-node-sdk mocha tests/appium.js --browserstack.config 'yaml/browserstack.appium.yml'",
     "xcui": "sh xcui.sh",
     "espresso": "sh espresso.sh"

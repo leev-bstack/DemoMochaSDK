@@ -31,3 +31,4 @@ browserstackLocal: false
 interactiveDebugging: true
 debug: true
 networkLogs: true
+appProfiling: true

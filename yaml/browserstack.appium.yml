@@ -3,7 +3,7 @@ accessKey:
 
 projectName: MochaJS Demos
 buildName: Appium Demo MochaJS
-buildIdentifier: '#${BUILD_NUMBER}'
+buildIdentifier: '#${DATE_TIME}'
 
 app: ./apps/wikipedia.apk
 

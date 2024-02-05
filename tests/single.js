@@ -26,6 +26,6 @@ describe('Google Search', async function() {
   });
   
   this.afterEach(async function() {
-    await driver.quit();
+   await driver.quit();
   });
 });

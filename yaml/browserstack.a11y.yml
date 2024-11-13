@@ -13,9 +13,9 @@ platforms:
     browserVersion: latest
 
 accessibility: true
-#accessibilityOptions:
+accessibilityOptions:
   # scannerProcessingTimeout: 5
-  # wcagVersion: wcag21aa
+  wcagVersion: wcag22aa
   # includeIssueType: 
   #   bestPractice: false
   #   needsReview: true

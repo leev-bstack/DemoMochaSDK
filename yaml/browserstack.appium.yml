@@ -25,9 +25,9 @@ platforms:
     platformName: Android
 
 parallelsPerPlatform: 1
+browserstackLocal: false
 
 autoGrantPermissions: true
-browserstackLocal: false
 interactiveDebugging: true
 debug: true
 networkLogs: true

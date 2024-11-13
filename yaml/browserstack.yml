@@ -2,6 +2,7 @@ userName:
 accessKey:
 
 buildName: single demo
+buildIdentifier: '#${DATE_TIME}'
 projectName: MochaJS Demos
 
 source: mocha:sample-master:v1.0

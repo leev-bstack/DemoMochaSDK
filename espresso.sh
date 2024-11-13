@@ -12,6 +12,6 @@ curl -u "$BROWSERSTACK_USERNAME:$BROWSERSTACK_ACCESS_KEY" \
 
 curl -u "$BROWSERSTACK_USERNAME:$BROWSERSTACK_ACCESS_KEY" \
 -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/build" \
--d '{"shards": {"numberOfShards": 4}, "devices": ["Google Pixel 6-12.0", "Samsung Galaxy S23-13.0"],
+-d '{"shards": {"numberOfShards": 4}, "deviceLogs": true, "devices": ["Google Pixel 6-12.0", "Samsung Galaxy S23-13.0"],
  "app": "androidApp", "testSuite": "espressoTest", "debugscreenshots": true}' \
 -H "Content-Type: application/json"

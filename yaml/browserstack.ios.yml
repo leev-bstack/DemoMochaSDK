@@ -1,0 +1,32 @@
+userName:
+accessKey:
+
+projectName: MochaJS Demos
+buildName: iOS Demo MochaJS
+buildIdentifier: '#${DATE_TIME}'
+
+app: ./apps/BStackSampleApp.ipa
+
+platforms:
+  - deviceName: iPhone 14
+    osVersion: 16
+    platformName: ios
+  - deviceName: iPhone 13 Pro
+    osVersion: 15
+    platformName: ios
+  - deviceName: iPhone 15 Plus
+    osVersion: 17
+    platformName: ios
+  - deviceName: iPhone 16
+    osVersion: 18
+    platformName: ios
+  - deviceName: iPhone 13
+    osVersion: 18
+    platformName: ios
+
+parallelsPerPlatform: 1
+browserstackLocal: false
+
+debug: true
+networkLogs: true
+appProfiling: true
